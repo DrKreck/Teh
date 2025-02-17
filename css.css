@@ -1,0 +1,44 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Герой-секция */
+#main {
+    padding: 100px 0;
+    background: linear-gradient(45deg, #0066cc, #0099ff);
+}
+
+/* Карточки товаров */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Секция преимуществ */
+#benefits img {
+    border-radius: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 200px;
+    }
+    
+    #main h1 {
+        font-size: 2rem;
+    }
+}
